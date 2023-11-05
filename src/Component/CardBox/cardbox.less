@@ -1,0 +1,149 @@
+.card-fornt {
+    border: 1px solid lightcyan;
+    height: 210px;
+    width: 400px;
+    position: absolute;
+    top: 90px;
+    left: -330px;
+    border-radius: 15px;
+
+    section {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        .cricle {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            padding: 20px 30px;
+
+            .big {
+                margin: 5px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50px;
+                border: 2px solid antiquewhite;
+                background-color: whitesmoke;
+            }
+
+            .small {
+                margin: 5px;
+                height: 25px;
+                width: 25px;
+                border: 2px solid antiquewhite;
+                border-radius: 50px;
+            }
+        }
+
+        .number {
+            text-align: center;
+            width: 100%;
+            letter-spacing: 3px;
+
+            p {
+                font-size: 30px;
+                margin-bottom: 0% !important;
+                color: whitesmoke;
+            }
+        }
+
+        .name-date {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 30px 10px 30px;
+
+            .name {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: system-ui;
+                color: whitesmoke;
+            }
+
+            .expdate {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: system-ui;
+                color: whitesmoke;
+            }
+        }
+
+    }
+
+}
+
+.card-back {
+    border: 2px solid darkolivegreen;
+    background-color: whitesmoke;
+    height: 210px;
+    width: 400px;
+    position: absolute;
+    top: 23rem;
+    left: -255px;
+    border-radius: 15px;
+
+    .section {
+        padding: 20px 0px;
+
+        .blank {
+            background-color: black;
+            height: 40px;
+        }
+
+        .para {
+            padding: 15px 30px;
+
+            p {
+                text-align: end;
+                border: 2px solid darkgrey;
+                padding: 8px;
+                border-radius: 5px;
+                margin: 0px;
+
+            }
+        }
+
+        .address {
+            padding: 0px 30px;
+
+            p{
+                text-align: justify;
+                padding: 0px 40px;
+                margin: 0px;
+            }
+        }
+    }
+
+}
+
+.spectrum-background {
+    background:
+        linear-gradient(red, transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+}
+
+.plaid-background {
+    background:
+        repeating-linear-gradient(-45deg,
+            transparent 0,
+            transparent 25%,
+            dodgerblue 0,
+            dodgerblue 50%),
+        repeating-linear-gradient(45deg,
+            transparent 0,
+            transparent 25%,
+            tomato 0,
+            tomato 50%),
+        repeating-linear-gradient(transparent 0,
+            transparent 25%,
+            gold 0,
+            gold 50%), white;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+}

@@ -1,0 +1,119 @@
+// this class  is small tag show hide.
+.show {
+    display: none;
+}
+
+.small {
+    padding: 2px 12px;
+    color: darkred;
+    font-size: 13px;
+}
+
+.form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    input {
+        width: 25rem;
+        height: 40px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    label {
+        font-family: system-ui;
+        font-weight: bold;
+        margin: 10px 0px;
+    }
+
+}
+
+.namenumber {
+    display: flex;
+    flex-flow: column wrap;
+
+
+}
+
+.datecvc {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        " exdatelabel exdatelabel cvclabel"
+        "mm yy cvcinput"
+        "smallMm smallYy smallCvc";
+
+}
+#smallMm{grid-area: smallMm;};
+#smallYy{grid-area: smallYy;};
+#smallCvc{grid-area: smallCvc;};
+
+#labelexdate {
+    grid-area: exdatelabel;
+    margin-top: 10px;
+
+}
+
+#labelcvc {
+    margin-top: 10px;
+    grid-area: cvclabel;
+}
+
+#mm {
+    grid-area: mm;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+}
+
+#yy {
+    text-align: center;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    grid-area: yy;
+}
+
+#cvc {
+    text-align: start;
+    grid-area: cvcinput;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#confirm {
+    margin-top: 12px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px;
+    background: #242434;
+    color: azure;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.circles-background {
+    height: 200px;
+    width: 100%;
+    background:
+        radial-gradient(khaki 40px,
+            transparent 0,
+            transparent 100%),
+        radial-gradient(skyblue 40px,
+            transparent 0,
+            transparent 100%),
+        radial-gradient(pink 40px,
+            transparent 0,
+            transparent 100%), snow;
+    background-blend-mode: multiply;
+    background-size: 100px 100px;
+    background-position: 0 0, 33px 33px, -33px -33px;
+}
